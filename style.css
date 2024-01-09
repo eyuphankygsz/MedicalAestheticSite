@@ -1,4 +1,5 @@
 * {  
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +9,9 @@ body{
   background-color: antiquewhite;
 
 }
+
+
+
 .navbar {
   width: 100%;
   height: 100px;
@@ -29,7 +33,7 @@ body{
   width: 30%;
 }
 .navbar .container .logo h2 {
-  font-size: 30px;
+  font-size: 38px;
   color: rgb(231, 231, 231);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -54,6 +58,7 @@ body{
   list-style: none;
 }
 .navbar .container .menu a {
+  transition: ease 0.5s;
   color: rgb(231, 231, 231);
   margin-right: 5px;
   padding: 14px 10px;
@@ -66,8 +71,7 @@ body{
   color: rgb(224, 69, 69);
 
 }
-.navbar .container .menu a:hover {  
-  transition: ease 0.5s;
+.navbar .container .menu a:hover {
   background-color: rgb(231, 231, 231);
   color: rgb(224, 69, 69);
 }
@@ -85,7 +89,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60vh;
+  min-height: 60vh;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -96,6 +100,14 @@ hr{
   margin: auto;
   background-color: rgb(224, 69, 69);
 }
+.titleheader{
+  width: 30%;
+  margin: auto;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
 .content .main .album .alb{
     background-color: rgba(194, 194, 194, 0.87);
     border-width: 10px;
@@ -182,9 +194,6 @@ hr{
   border: 4px solid rgb(224, 69, 69);  border-top: none;
 }
 
-
-
-
 .itemcontainer .storyBox:nth-child(3){
   border-top-right-radius: 20px;
   border-bottom-right-radius: 40px;
@@ -200,11 +209,63 @@ hr{
 }
 
 
+.news{
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+}
+.newscontainer{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.news-block{
+  display: flex;
+  height: 500px;
+  border: 3px #fcc4c4 solid;
+  background-color: #fde3d8;
+  margin-bottom: 15px;
+}
+.news-block .image{
+  width: 50%;
+  height: 100%;
+}
+.news-block .text-area{
+  width: 40%;
+  height: 80%;
+  text-align: left;
+  vertical-align: middle;
+  margin: auto;
+  overflow-y: auto;
+  padding-top: 15px;
+}.news-block h1{
+  font-size: 50px;
+}
+.news-block p{
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .map{  
   font-family: Arial, Helvetica, sans-serif;
-  transition: ease 0.5s;
   margin: auto;
   margin-top: 10px;
   height: 600px;
@@ -247,6 +308,7 @@ hr{
   padding-right: 10px;
   font-size: 14px;
 }
+
 .map .content label{
   font-size: 20px;
 }
@@ -266,6 +328,7 @@ hr{
   height: 80px;
 }
 .map .inputrow2 .select{
+  outline: none;
   width: 50%;
 }
 .map select{
@@ -275,9 +338,15 @@ hr{
 }
 
 .map .inputrow input{
+  outline: none;
   width: 92%;
   max-width: 200px;
   height: 40px;
+}
+.map .inputrow input:focus{
+  
+  transition: ease 0.1s;
+  border-color: red;
 }
 .map .inputrow label {
   display: block;  
@@ -398,7 +467,7 @@ hr{
     width: 40%;
   }
   .navbar .container .logo h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .navbar .container .menu li {
     font-size: 12px;
@@ -487,6 +556,29 @@ hr{
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+
+
+
+
+
+
+  .news-block{
+    display: block;
+    height: 800px;
+  }
+  .news-block .image{
+    width: 100%;
+    height: 50%;
+  }
+  .news-block .text-area{
+    width: 90%;
+    height: 50%;
+  }.news-block h1{
+    font-size: 30px;
+  }
+  .news-block p{
+    font-size: 18px;
   }
 
 
@@ -594,7 +686,7 @@ hr{
     width: 30%;
   }
   .navbar .container .logo h2 {
-    font-size: 16px;
+    font-size: 25px;
   }
   .navbar .container .menu li {
     display: none;
@@ -618,7 +710,7 @@ hr{
     size: 0;
     border-width: 0px;
     background-color: transparent;
-    color: white;
+    color: black;
     padding: 0px 0px;
     margin: 0 0px;
  }
