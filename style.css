@@ -399,6 +399,8 @@ hr{
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+
 .footerHolder{
   height: 60px;
 }
@@ -454,12 +456,6 @@ hr{
 
 
 
-
-
-
-
-
-
 @media screen and (max-width: 700px) {
   .navbar .container .logo {
     display: flex;
@@ -470,10 +466,11 @@ hr{
     font-size: 30px;
   }
   .navbar .container .menu li {
-    font-size: 12px;
-  }
-  .navbar .container .menu a {
-    padding: 10px 3px;
+    display: none;
+  } 
+  .navbar .container .menuicon {
+    display: flex;
+    align-items: center;
   }
   .content .main .album .alb{
     border-width: 5px;
@@ -487,10 +484,17 @@ hr{
     height: 60vh;
     width: 100%;
   }
-
-
-
-
+  .navbar .container .menuicon a {
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    display: flex;
+    align-items: center;
+  }
+  .navbar .container .menu a {
+    color: rgb(231, 231, 231);
+    padding: 8px 2px;
+    text-decoration: none;
+  }
 
   .content .itemcontainer {
     padding-top: 10px;
@@ -506,27 +510,6 @@ hr{
     width: 90%;
     margin-bottom: 10px;
   }
-
-  .navbar .container .menu li {
-    display: none;
-  }
-
-  .navbar .container .menuicon {
-    display: flex;
-    align-items: center;
-  }
-  .navbar .container .menuicon a {
-    text-decoration: none;
-    color: rgb(231, 231, 231);
-    display: flex;
-    align-items: center;
-  }
-  .navbar .container .menu a {
-    color: rgb(231, 231, 231);
-    padding: 8px 2px;
-    text-decoration: none;
-  }
-
   .itemcontainer .storyBox:first-child > .image img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -618,15 +601,12 @@ hr{
   .map .inputrow input{
     height: 30px;
   }
-
-
   .map .submit{
     margin-right: 0;
     float: none;
   }
 
   .map .mapitself{    
-
     display: block;
     width: 100%;
     height: 50vh;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EstheCare City Hospital</title>
-    <link rel="icon" href="https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA08519_00/12/i_3da1cf7c41dc7652f9b639e1680d96436773658668c7dc3930c441291095713b/i/icon0.png">
+    <link rel="icon" href="https://static.wixstatic.com/media/2e4e7a_e065854f133843538b5fa1aa29ad21c1~mv2.png/v1/fit/w_2500,h_1330,al_c/2e4e7a_e065854f133843538b5fa1aa29ad21c1~mv2.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
@@ -33,15 +33,14 @@
     <div class="content">
         <div class="main">
             <div class="album">
-                <button class="alb alb-pre">
+                <button class="alb alb-pre" onclick="albumChange(false)">
                     <i class="fa-solid fa-chevron-left fa-xl"></i>
                 </button>
                 <div class="middle">
                     <h1>Lorem, ipsum dolor.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
-
                 </div>
-                <button class="alb alb-aft">
+                <button class="alb alb-aft" onclick="albumChange(true)">
                     <i class="fa-solid fa-chevron-right fa-xl"></i>
                 </button>
             </div>
@@ -80,11 +79,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            
         </div>
     </div>
-
+    <hr>
     <div class="news">            
         <div class="titleheader">
         <h2>News</h2>
@@ -160,12 +157,7 @@
                         <textarea name="txtcomp" id="3" cols="70" rows="5" placeholder="Please enter your complain in here!"></textarea>
                     </div>
                     <button class="submit">Submit</button>
-                    
-
-
-            </div>
-
-            
+            </div>     
         </div>
         <div class="mapitself">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5351398240114!2d28.794497776424407!3d40.99165892044745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa3ec6dcbcd51%3A0xfa0eff52eb41fd85!2zxLBBVQ!5e0!3m2!1str!2str!4v1704559955567!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
@@ -186,7 +178,6 @@
             </div>
         </div>
     </div>
-
-
+    <script src="app.js"></script>
 </body>
 </html>
