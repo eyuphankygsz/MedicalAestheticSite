@@ -1,24 +1,56 @@
-let a = document.querySelector(".album");
+
 
 let albumImages = [
-    "https://images7.alphacoders.com/749/749807.png",
-    "https://cdn1.epicgames.com/b30b6d1b4dfd4dcc93b5490be5e094e5/offer/RDR2476298253_Epic_Games_Wishlist_RDR2_2560x1440_V01-2560x1440-2a9ebe1f7ee202102555be202d5632ec.jpg",
-    "https://wallpapers.com/images/featured/red-dead-redemption-2-z2k9m7covvnglatm.jpg",
-    "https://www.pixel4k.com/wp-content/uploads/2020/01/red-dead-redemption-2_1578851471.jpg.webp"
+    "https://www.8medicalaesthetic.com/images/sbanner3.png",
+    "https://wallpapercave.com/wp/wp1848611.jpg",
+    "https://wallpapercave.com/wp/wp1848637.jpg",
+    "https://wallpapercave.com/wp/wp1848589.jpg",
+    "https://wallpapercave.com/wp/wp1848591.jpg"
 ];
+
+let albumTitle = [
+    "Beautiful Face",
+    "Like Home",
+    "Big Place",
+    "Clean Rooms",
+    "Technology"
+];
+let albumContent = [
+    "Look good with every body parts of your own.",
+    "Warm and cozy!",
+    "300 patient capacity.",
+    "Sterilized rooms for your health.",
+    "High quality technology only for you!"
+];
+
 let albCounter = 0;
+
+let newUrl = "url(" + albumImages[albCounter] + ")";
+
+let album = document.querySelector(".album");
+album.style.backgroundImage = newUrl;
+
+let middleTitle = document.querySelector(".middle h1")
+middleTitle.innerHTML = albumTitle[albCounter];
+
+let middleContent = document.querySelector(".middle p")
+middleContent.innerHTML = albumContent[albCounter];
 
 function albumChange(next){
     if(next){
         albCounter = 
-            (albCounter + 1) == albumImages.length ? 0 : albCounter + 1; 
+        (albCounter + 1) == albumImages.length ? 0 : albCounter + 1; 
     }
     else{
         albCounter = 
-            (albCounter - 1) == -1 ? albumImages.length -1 : albCounter - 1;
+        (albCounter - 1) == -1 ? albumImages.length -1 : albCounter - 1;
     }
-
+    
     console.log(albCounter);
-    let newUrl = "url(" + albumImages[albCounter] + ")";
-    a.style.backgroundImage = newUrl;
+    newUrl = "url(" + albumImages[albCounter] + ")";
+    album.style.backgroundImage = newUrl;
+    middleTitle.innerHTML = albumTitle[albCounter];
+    middleContent.innerHTML = albumContent[albCounter];
+
+
 }
